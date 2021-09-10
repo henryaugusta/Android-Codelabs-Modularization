@@ -1,11 +1,9 @@
-package com.dicoding.mysimplelogin
+package com.feylabs.core
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.dicoding.mysimplelogin.databinding.ActivityHomeBinding
-import com.feylabs.core.SessionManager
-import com.feylabs.core.UserRepository
+import com.feylabs.core.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
 
@@ -29,7 +27,18 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun moveToMainActivity() {
-        startActivity(Intent(this, MainActivity::class.java))
+        var intent: Intent? = null
+        try {
+            intent = Intent(
+                this,
+                Class.forName("com.dicoding.home.MainActivity")
+            )
+            startActivity(intent)
+        } catch (e: ClassNotFoundException) {
+            e.printStackTrace()
+        }
+
+//        startActivity(Intent(this, Class.forName("com.dicoding.home.MainActivity")))
         finish()
     }
 }

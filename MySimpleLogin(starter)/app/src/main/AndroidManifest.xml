@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MySimpleLogin">
-        <activity android:name="com.dicoding.mysimplelogin.HomeActivity" />
+        <activity android:name="com.feylabs.core.HomeActivity" />
         <activity android:name="com.dicoding.mysimplelogin.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

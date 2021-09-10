@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.dicoding.mysimplelogin.databinding.ActivityMainBinding
+import com.feylabs.core.HomeActivity
 import com.feylabs.core.SessionManager
 import com.feylabs.core.UserRepository
 
@@ -35,7 +36,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun moveToHomeActivity() {
-        startActivity(Intent(this, HomeActivity::class.java))
+        startActivity(Intent(this, Class.forName("com.feylabs.core.HomeActivity")))
         finish()
     }
 }
