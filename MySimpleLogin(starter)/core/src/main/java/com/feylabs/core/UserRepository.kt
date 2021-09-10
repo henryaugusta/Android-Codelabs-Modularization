@@ -1,4 +1,4 @@
-package com.dicoding.mysimplelogin
+package com.feylabs.core
 
 class UserRepository(private val sesi: SessionManager) {
 

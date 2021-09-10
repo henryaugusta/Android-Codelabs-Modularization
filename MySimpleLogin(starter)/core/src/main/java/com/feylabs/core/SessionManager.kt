@@ -1,4 +1,4 @@
-package com.dicoding.mysimplelogin
+package com.feylabs.core
 
 import android.content.Context
 import android.content.SharedPreferences

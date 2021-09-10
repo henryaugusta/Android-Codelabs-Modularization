@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.dicoding.mysimplelogin.databinding.ActivityMainBinding
+import com.feylabs.core.SessionManager
+import com.feylabs.core.UserRepository
 
 class MainActivity : AppCompatActivity() {
 
